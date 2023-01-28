@@ -1,0 +1,28 @@
+.works {
+  &_title {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+    color: #21243d;
+  }
+  &_title__two {
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: #21243d;
+  }
+  &_text {
+    margin: 0;
+    padding: 0;
+    width: 677px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &_img {
+    margin-bottom: 27px;
+  }
+}
