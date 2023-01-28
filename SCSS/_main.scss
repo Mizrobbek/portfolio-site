@@ -1,0 +1,82 @@
+.main {
+  &__section {
+    margin-left: 235px;
+  }
+
+  &__section-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    color: #21243d;
+    margin-bottom: 25px;
+  }
+
+  &__section-list-link {
+    display: flex;
+    align-items: center;
+  }
+
+  &__section-info {
+    margin-left: 18px;
+  }
+
+  &__section-list-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 44px;
+    color: #21243d;
+    margin-bottom: 16px;
+  }
+
+  &__section-list-info {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    margin-bottom: 19px;
+  }
+
+  &__section-list-info-date {
+    padding: 5px 10px;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 20px;
+    background: #142850;
+    color: #fff;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+  }
+
+  &__section-list-info-date:hover {
+    color: rgb(156, 221, 4);
+    background: #0e9170;
+    transition: all 0.3s ease;
+  }
+
+  &__section-list-info-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: #8695a4;
+    transition: all 0.3s ease;
+  }
+
+  &__section-list-info-text:hover {
+    color: #515a63;
+    transition: all 0.3s ease;
+  }
+
+  &__section-list-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #21243d;
+    width: 408px;
+    height: 93px;
+  }
+
+  &__hr {
+    margin-top: 47px;
+    width: 682px;
+    margin-bottom: 44px;
+  }
+}

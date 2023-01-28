@@ -1,0 +1,28 @@
+.header {
+  &__list {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 15px;
+    margin-top: 27px;
+    margin-bottom: 90px;
+  }
+
+  &__list-link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: right;
+    color: #21243d;
+    transition: all 0.3s ease;
+  }
+
+  &__list-link:hover {
+    color: #ff6464;
+    transition: all 0.3s ease;
+  }
+
+  &__list--active {
+    color: #ff6464;
+  }
+}
