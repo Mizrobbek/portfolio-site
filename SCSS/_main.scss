@@ -16,6 +16,10 @@
     align-items: center;
   }
 
+  &_responsive-link {
+    display: none;
+  }
+
   &__section-info {
     margin-left: 18px;
   }
@@ -78,5 +82,59 @@
     margin-top: 47px;
     width: 682px;
     margin-bottom: 44px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .main {
+    &__section-title {
+      margin-top: 24px;
+      font-weight: 700;
+      font-size: 30px;
+      margin-bottom: 13px;
+    }
+
+    &__section-list-link {
+      display: unset;
+    }
+
+    &__section-link-img {
+      margin-left: auto;
+      margin-right: auto;
+      width: 339px;
+      height: 230px;
+      margin-bottom: 17px;
+    }
+
+    &__section-list-title {
+      width: 244px;
+      height: 30px;
+      font-size: 24px;
+      line-height: 30px;
+    }
+    &__section-list-info {
+      gap: 22px;
+    }
+
+    &__section-list-info-date {
+      font-size: 16px;
+    }
+
+    &__section-list-info-text {
+      font-size: 16px;
+      line-height: 24px;
+      width: 330px;
+      height: 96px;
+    }
+
+    &__hr {
+      margin-top: 17px;
+      width: 365px;
+      margin-bottom: 22px;
+    }
+
+    &_responsive-link {
+      display: block;
+    }
   }
 }
