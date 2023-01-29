@@ -1,4 +1,6 @@
 .intro {
+  margin-left: 235px;
+
   &_title {
     margin: 0;
     padding: 0;
@@ -9,6 +11,7 @@
     line-height: 50px;
     color: #21243d;
   }
+
   &-list {
     margin: 0;
     padding: 0;
@@ -17,6 +20,7 @@
     align-items: center;
     gap: 17px;
   }
+
   &_item__one {
     width: 62px;
     padding: 5px 10px;
@@ -26,13 +30,28 @@
     color: #ffffff;
     background-color: #ff7c7c;
     border-radius: 16px;
+    transition: all 0.3s ease;
   }
+
+  &_item__one:hover {
+    color: rgb(156, 221, 4);
+    background: #0e9170;
+    transition: all 0.3s ease;
+  }
+
   &_item__two {
     font-weight: 400;
     font-size: 20px;
     line-height: 29px;
     color: #21243d;
+    transition: all 0.3s ease;
   }
+
+  &_item__two:hover {
+    color: #515a63;
+    transition: all 0.3s ease;
+  }
+
   &_text {
     margin: 0;
     padding: 0;
@@ -42,6 +61,7 @@
     line-height: 24px;
     margin-bottom: 46px;
   }
+
   &_img {
     margin-bottom: 46px;
   }
