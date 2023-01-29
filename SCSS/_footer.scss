@@ -1,0 +1,22 @@
+.footer {
+  &__section {
+    margin-top: 58px;
+    height: 182px;
+  }
+
+  &__section-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+  }
+
+  &__section-text {
+    margin-top: 26px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #21243d;
+  }
+}
