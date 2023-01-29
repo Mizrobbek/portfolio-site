@@ -87,6 +87,13 @@
 
 @media only screen and (max-width: 375px) {
   .main {
+    margin: 0;
+    padding: 0;
+
+    &__section {
+      margin-left: 8px;
+    }
+
     &__section-title {
       margin-top: 24px;
       font-weight: 700;
@@ -99,32 +106,34 @@
     }
 
     &__section-link-img {
-      margin-left: auto;
-      margin-right: auto;
       width: 339px;
       height: 230px;
       margin-bottom: 17px;
     }
 
     &__section-list-title {
-      width: 244px;
+      width: 350px;
       height: 30px;
       font-size: 24px;
       line-height: 30px;
     }
     &__section-list-info {
+      display: flex;
+      align-items: center;
       gap: 22px;
     }
 
     &__section-list-info-date {
+      margin-top: -75px;
       font-size: 16px;
+      line-height: 14px;
     }
 
     &__section-list-info-text {
       font-size: 16px;
       line-height: 24px;
-      width: 330px;
-      height: 96px;
+      width: 300px;
+      height: 110px;
     }
 
     &__hr {
