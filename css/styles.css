@@ -73,7 +73,7 @@ abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted; /* 2 */
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -172,9 +172,9 @@ select {
    * Correct the inability to style clickable types in iOS and Safari.
    */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -182,9 +182,9 @@ button,
    * Remove the inner border and padding in Firefox.
    */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -193,9 +193,9 @@ button::-moz-focus-inner,
    * Restore the focus styles unset by the previous rule.
    */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -239,8 +239,8 @@ textarea {
    * 1. Add the correct box sizing in IE 10.
    * 2. Remove the padding in IE 10.
    */
-[type="checkbox"],
-[type="radio"] {
+[type=checkbox],
+[type=radio] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
@@ -248,8 +248,8 @@ textarea {
 /**
    * Correct the cursor style of increment and decrement buttons in Chrome.
    */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -257,7 +257,7 @@ textarea {
    * 1. Correct the odd appearance in Chrome and Safari.
    * 2. Correct the outline style in Safari.
    */
-[type="search"] {
+[type=search] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
@@ -265,7 +265,7 @@ textarea {
 /**
    * Remove the inner padding in Chrome and Safari on macOS.
    */
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -314,24 +314,21 @@ template {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
-  src: local(""), url("../fonts/heebo-v21-latin-regular.woff2") format("woff2"),
-    url("../fonts/heebo-v21-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("../fonts/heebo-v21-latin-regular.woff2") format("woff2"), url("../fonts/heebo-v21-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* heebo-700 - latin */
 @font-face {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 700;
-  src: local(""), url("../fonts/heebo-v21-latin-700.woff2") format("woff2"),
-    url("../fonts/heebo-v21-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("../fonts/heebo-v21-latin-700.woff2") format("woff2"), url("../fonts/heebo-v21-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* heebo-900 - latin */
 @font-face {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 900;
-  src: local(""), url("../fonts/heebo-v21-latin-900.woff2") format("woff2"),
-    url("../fonts/heebo-v21-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("../fonts/heebo-v21-latin-900.woff2") format("woff2"), url("../fonts/heebo-v21-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 *,
 *::after,
@@ -718,4 +715,95 @@ ul {
 }
 .works_img {
   margin-bottom: 27px;
-} /*# sourceMappingURL=styles.css.map */
+}
+
+@media only screen and (max-width: 375px) {
+  .works {
+    margin: 0;
+  }
+  .works_title {
+    font-size: 26px;
+    line-height: 20px;
+  }
+  .works_title__two {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  .works_text {
+    width: 339px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+}
+.main__section {
+  margin-left: 235px;
+}
+.main__section-info {
+  margin-left: 0;
+}
+.main__blog-list-date {
+  display: flex;
+  align-items: center;
+  margin-left: -12px;
+  padding: 5px 10px;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 20px;
+  color: #21243d;
+  border-right: 1px solid #000;
+  height: 20px;
+  transition: all 0.3s ease;
+}
+.main__blog-list-date:hover {
+  color: rgb(4, 105, 221);
+  transition: all 0.3s ease;
+}
+.main__blog-list-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #21243d;
+  width: 682px;
+  height: 43px;
+}
+.main__blog-hr {
+  margin-top: 29px;
+  width: 682px;
+  margin-bottom: 32px;
+}
+
+@media only screen and (max-width: 375px) {
+  .main {
+    margin: 0;
+    padding: 0;
+  }
+  .main__section {
+    margin-left: 8px;
+  }
+  .main__section-list-title {
+    width: 350px;
+    height: 30px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .main__blog-list-date {
+    margin-top: -75px;
+    width: 89px;
+    height: 24px;
+    font-size: 16px;
+    line-height: 14px;
+  }
+  .main__blog-list-text {
+    width: 300px;
+    height: 110px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .main__blog-hr {
+    margin-top: 17px;
+    width: 399px;
+    margin-bottom: 22px;
+  }
+}/*# sourceMappingURL=styles.css.map */
